@@ -15,12 +15,42 @@
 .space {
   height: 90px;
 }
-.options_list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 30px 140px 0px 140px;
-  gap: 6px;
+@media (max-width: 600px) {
+  .options_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 30px 16px 0px 30px;
+    gap: 6px;
+  }
+  .option {
+    display: flex;
+    gap: 8px;
+    justify-content: left;
+  }
+  .correct_answer {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    font-size: x-large;
+    color: purple;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 700px) {
+  .options_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 140px 0px 140px;
+    gap: 6px;
+  }
+  .correct_answer {
+    display: flex;
+    padding: 30px 140px;
+    font-size: x-large;
+    color: purple;
+  }
 }
 .option {
   display: flex;
@@ -45,12 +75,6 @@ input {
 }
 .final_msg {
   font-size: xx-large;
-  color: purple;
-}
-.correct_answer {
-  display: flex;
-  padding: 30px 140px;
-  font-size: x-large;
   color: purple;
 }
 .final_btns {
